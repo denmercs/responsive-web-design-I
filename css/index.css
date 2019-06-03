@@ -233,7 +233,7 @@ header {
 }
 
 /** MEDIA QUERIES TABLET **/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     .middle-img {
         height: 181px;
     }
@@ -399,12 +399,41 @@ footer {
 		font-size: 1.5rem;
 		font-family: 'Roboto', sans-serif;
 		line-height: 1.5;
-	}
+    }
+
+/** MEDIA QUERIES FOR TABLET **/
+@media only screen and (max-width: 800px) {
+
+    .service-text h3{
+        font-size: 2rem;
+    }
+
+    .service-text p {
+        font-size: 1rem;
+    }
+}
+
+
+/** MEDIA QUERIES FOR PHONE **/
+@media only screen and (max-width: 500px) {
+    .service-hero {
+        display: none;
+    }
+
+    .service-text h3{
+        font-size: 1.5rem;
+    }
+
+    .service-text p {
+        font-size: .8rem;
+    }
+
+}
+
 
 .box {
 	display: flex;
 	justify-content: center;
-
 }
 
 .box-item {
@@ -414,24 +443,21 @@ footer {
 	padding: 2rem;
 }
 
-.box-item-facts {
-	display: flex;
-	justify-content: space-between;
-}
+    .box-item h3 {
+        font-size: 2rem;
+    }
 
-	.box-item h3 {
-		font-size: 2rem;
-	}
+    .box-item p {
+        font-size: 1.25rem;
+        line-height: 2;
+    }
 
-	.box-item p {
-		font-size: 1.25rem;
-		line-height: 2;
-	}
-
-	.box-item button {
+    .box-item button {
 		font-size: 1.25rem;
 		padding: 1rem 3rem;
-		margin-top: 2rem;
+        margin-top: 2rem;
+        border: 2px solid black;
+        background-color: #F4FEFB;
 	}
 
 	.box-item button:hover {
@@ -439,6 +465,77 @@ footer {
 		background-color: grey;
 		transition: all ease-in .5s;
 	}
+
+/** MEDIA QUERY FOR TABLET **/
+@media only screen and (max-width: 800px) {
+    .box-item h3 {
+        font-size: 1.5rem
+    }
+
+    .box-item p {
+        font-size: 1rem;
+    }
+
+    .box-item button {
+        font-size: 1rem;
+    }
+}
+
+/** MEDIA QUERY FOR TABLET **/
+@media only screen and (max-width: 800px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .box-item {
+        margin: 1rem;
+    }
+    .box-item h3 {
+        font-size: 1rem
+    }
+
+    .box-item p {
+        font-size: .8rem;
+    }
+
+    .box-item button {
+        font-size: .6rem;
+        padding: .8rem 3rem;
+    }
+}
+
+.box-item-facts {
+	display: flex;
+	justify-content: space-between;
+}	
+
+/** MEDIA QUERY FOR TABLET **/
+@media only screen and (max-width: 800px) {
+    section .box-item-facts h3 {
+        font-size: 1.5rem
+    }
+
+    section .box-item-facts p {
+        font-size: 1rem;
+    }
+
+    .box-item-facts ul li {
+        font-size: 1rem;
+    }
+}
+
+/** MEDIA QUERY FOR PHONE **/
+@media only screen and (max-width: 500px) {
+    section .box-item-one h3 {
+        font-size: 1rem;
+    }
+    section .box-item-one p {
+        font-size: .8rem;
+    } 
+    .box-item-facts ul li {
+        font-size: .8rem;
+    }
+}
 
 .box-item-two {
 	width: auto;
