@@ -1,0 +1,224 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/** MOBILE FIRST **/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding-top: 1rem;
+}
+    header nav {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        align-items: center;
+        margin-top: .8rem;
+        padding: 1.25rem;
+    }
+
+    nav > a {
+        order: 1;
+        width: 100%;
+        padding: 1rem 10rem;
+        border: 1px solid grey;
+        text-align: center;
+        text-decoration: none;
+        color: grey;
+    }
+
+    nav > a:hover {
+		color: white;
+		background-color: grey;
+		transition: all ease-in .8s;
+	}
+
+	.logo {
+		background-image: url('../img/logo.png');
+		width: 183px;
+		height: 35px;
+        padding: 0 2rem;
+        margin-top: 1.5rem;
+    }
+
+/** MEDIA QUERY FOR TABLET **/
+@media only screen and (min-width: 500px) {
+    header {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+        header nav {
+            display: flex;
+            flex-direction: row;
+            margin-top: .8rem;
+        }
+        nav > a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: grey;
+            padding: 1rem 1.5rem;
+            border: none;
+        }
+    
+        nav > a:hover {
+            color: white;
+            background-color: grey;
+            transition: all ease-in .8s;
+        }
+    
+        .logo {
+            background-image: url('../img/logo.png');
+            width: 183px;
+            height: 35px;
+            padding: 0 2rem;
+            margin-top: 1.5rem;
+        }
+}
+
+.hero {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-text {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .hero-text h3{
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .hero-text button {
+        border: 1px solid grey;
+        background-color: white;
+        margin-top: 1rem;
+        font-size: .5rem;
+        padding: .5rem 2rem;
+    } 
+    .hero-text button:hover {
+        background-color: grey;
+        color: white;
+        transition: all 2s ease-in;
+    }
+
+@media only screen and (min-width: 500px) {
+    .hero {
+        margin: 0;
+    }
+}
+
+content {
+    display: flex;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+hr {
+    margin: 1rem 0;
+    border-bottom: 1.5px solid black;
+}
+
+.middle-img {
+	background-image: url('../img/mid-page-accent.jpg');
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin: 2rem 0;
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+}
+
+.contact address {
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: .8rem 0;
+}
+footer p {
+    font-size: 1rem;
+    padding: .5rem 0;
+}
